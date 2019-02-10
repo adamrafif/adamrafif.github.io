@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adam Rafif Faqih</title>
+</head>
+<body>
+<style type="text/css">
+	#pop{
+		height: 280px;
+		width: 470px;
+		position: fixed;
+		bottom: 50%;
+		right: 50%;
+		border: 2px solid;
+		padding: 10px;
+		background: #FFFF;
+		border-radius: 9px;
+
+	}
+	#close{
+		right: 5;
+		top: 5;
+		float: right;
+	}
+</style>
+<div id="pop" style="text-align: center; font-size: 50px; font-family: arial black;">
+	<button id="close" onclick="document.getElementById('pop').style.display='none'">Close</button><br>
+	<p>
+		Welcome :)
+
+	</p>
+</div>
+</body>
+<body>
+	<style type="text/css">
+		.clockStyle {
+			background-color: #000;
+			border: #999 2px inset;
+			padding: 6px;
+			color: #0FF;
+			font-family: "Arial Black", Gadget, sans-serif;
+			font-size: 40px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			display: inline;
+		}
+	</style>
+<div id="clockDisplay" class="clockStyle"></div>
+<script type="text/javascript" language="javascript">
+function renderTime() {
+
+var currentTime = new Date();
+var diem = "AM";
+var h = currentTime.getHours();
+var m = currentTime.getMinutes();
+var s = currentTime.getSeconds();
+
+if (h == 0) {
+	h = 12;
+} else if (h > 12) {
+	h = h - 12;
+	diem = "PM";
+}
+if (h < 10) {
+	h = "0" + h;
+}
+if (m < 10) {
+	m = "0" + m;
+}
+if (s < 10) {
+	s = "0" + s;
+}
+
+var myClock = document.getElementById('clockDisplay');
+myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+myClock.innertext = h + ":" + m + ":" + s + " " + diem;
+
+setTimeout('renderTime()',1000);
+
+}
+renderTime();
+</script>
+</body>
+<body style="
+	background-image: url(https://raw.githubusercontent.com/adamrafif/Adam/master/845143.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;">
+
+<h1 style="
+	font-family: edo sz;
+	font-size: 100px;
+	text-align: center;
+	color: #00ff8a; " >
+	BIODATA
+</h1>
+
+	<div><img src="https://raw.githubusercontent.com/adamrafif/Adam/master/Untitled-1%401x.jpg" width="360px" height="240px" alt="Picture of Me" 
+	style="float: right; border: solid Black 5px; padding: 3px;">
+</div>
+
+
+<p style="
+	font-family: starwars;
+	font-size: 45px;
+	color: ;
+	font-weight: bold;">
+Nama : Adam Rafif Faqih
+<br>
+<br>
+Tempat Tanggal Lahir : Bogor, 14 Juli 2002
+<br>
+<br>
+Jenis Kelamin : Laki-laki
+<br>
+<br>
+Alamat Rumah : Ciherang Bong Rt.3 Rw.7 , Dramaga, Kab. Bogor
+<br>
+<br>
+Agama : Islam
+<br>
+<br>
+Hobi : Nonton Film, Baca Komik
+<br>
+<br>
+Cita-Cita : Analis Kimia
+<br>
+<br>
+Email : adamrafif48@gmail.com
+<br>
+<br>
+Social Platform :
+		<a href="https://steamcommunity.com/id/adamrfaqih">Steam</a>
+
+
+	
+
+</p>
+<br>
+<audio autoplay="" src="https://raw.githubusercontent.com/adamrafif/Adam/master/BGM2.ogg" loop="" >
+</audio>
+<div class="footer-copyright">
+	&copy; AdamRFaqih
+</div>
+
+<img src="https://raw.githubusercontent.com/adamrafif/Adam/master/KKPI GIF.gif" width="136,5px" height="76,6px" alt="Picture of Me" 
+	style="float: left; border: solid Black 5px; padding: 3px;">
+
+
+</body>
+</html>
+    
