@@ -1,0 +1,43 @@
+@import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+* {
+  transform: translateZ(0);
+}
+
+span {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.wrap, .bubble {
+  border: 1px solid red;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.section-one {
+  height: 100%;
+  @include linear-gradient(#0a365d, #030f1b);
+}
+
+html, body {
+  margin: 0px;
+  background-color: #000;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.bubble {
+  transition: all 1s ease-in-out;
+}
+
+.wrap {
+  position: fixed;
+  transition: all 25s linear;
+}
